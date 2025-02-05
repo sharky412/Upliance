@@ -82,7 +82,7 @@ the local storage in interval of 5 sec)
 ### Steps
 1. Clone the repository:
    ```sh
-   git clone <repository-url>
+   git clone https://github.com/sharky412/Upliance
    cd upliance
    ```
 2. Install dependencies:
