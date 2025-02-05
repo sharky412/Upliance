@@ -7,13 +7,7 @@ import { getAnalytics } from "firebase/analytics";
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyCaY2NnvzTS1QcT8WovTOFbL6SneJQsAcU",
-  authDomain: "upliance-cf360.firebaseapp.com",
-  projectId: "upliance-cf360",
-  storageBucket: "upliance-cf360.firebasestorage.app",
-  messagingSenderId: "582730917210",
-  appId: "1:582730917210:web:650199465ebbbd9604ff63",
-  measurementId: "G-XNBES41TJV"
+  //apikeys
 };
 // Initialize Firebase App
 const app = initializeApp(firebaseConfig);
