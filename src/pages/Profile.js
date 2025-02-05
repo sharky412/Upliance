@@ -4,10 +4,8 @@ import { Paper, Typography, Box } from '@mui/material';
 import { useSpring, animated } from 'react-spring';
 
 function Profile() {
-  // Get the username from Redux state (assuming it's under the userData key)
   const currentUser = useSelector((state) => state.user.userData);
 
-  // Define fadeIn animation
   const fadeIn = useSpring({ opacity: 1, from: { opacity: 0 }, config: { duration: 500 } });
 
   return (

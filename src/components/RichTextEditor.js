@@ -15,7 +15,7 @@ import {
 const RichTextEditor = () => {
   const [editorContent, setEditorContent] = useState('');
   const [showSaveSuccess, setShowSaveSuccess] = useState(false);
-  const quillRef = useRef(null); // Reference to Quill instance
+  const quillRef = useRef(null);
 
   useEffect(() => {
     const savedContent = localStorage.getItem('editorContent');
@@ -34,9 +34,9 @@ const RichTextEditor = () => {
 
   const handleClearContent = () => {
     setEditorContent('');
-    localStorage.removeItem('editorContent'); // Remove from localStorage
+    localStorage.removeItem('editorContent'); 
     const editor = quillRef.current.getEditor();
-    editor.setContents([]); // Clear Quill content properly
+    editor.setContents([]); 
   };
 
   const handleGetUserInfo = () => {

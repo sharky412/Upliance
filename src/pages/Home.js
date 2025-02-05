@@ -2,7 +2,6 @@ import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
 import { Loader2, Sparkles, Zap } from 'lucide-react';
 
-// Lazy load components
 const Counter = React.lazy(() => import('../components/Counter'));
 const UserForm = React.lazy(() => import('../components/UserForm'));
 const RichTextEditor = React.lazy(() => import('../components/RichTextEditor'));

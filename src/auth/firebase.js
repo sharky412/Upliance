@@ -19,7 +19,7 @@ const provider = new GoogleAuthProvider();
 export const signInWithGoogle = async () => {
   try {
     const result = await signInWithPopup(auth, provider);
-    return result.user; // Returns user details
+    return result.user; 
   } catch (error) {
     console.error("Google Sign-in Error:", error);
   }
@@ -34,3 +34,4 @@ export const logoutUser = async () => {
 };
 
 export { auth };
+//todo

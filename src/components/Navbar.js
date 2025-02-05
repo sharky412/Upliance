@@ -33,7 +33,6 @@ const Navbar = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  // Custom Theme
   const theme = createTheme({
     palette: {
       primary: {
@@ -47,7 +46,6 @@ const Navbar = () => {
     }
   });
 
-  // Responsive checks
   const isSmallScreen = useMediaQuery(theme.breakpoints.down('sm'));
 
   const isAuthenticated = useSelector((state) => state.user?.isAuthenticated);
@@ -138,7 +136,6 @@ const Navbar = () => {
             </Typography>
           </Box>
 
-          {/* Navigation Actions */}
           <Box sx={{ 
             display: 'flex', 
             alignItems: 'center', 

@@ -13,13 +13,11 @@ const Counter = () => {
   const count = useSelector((state) => state.counter.value);
   const dispatch = useDispatch();
 
-  // Background color animation based on count
   const backgroundAnimation = useSpring({
     backgroundColor: `rgba(25, 118, 210, ${Math.min(count / 20, 1)})`,
     config: { duration: 500 },
   });
 
-  // Subtle button scaling animation
   const buttonAnimation = useSpring({
     scale: count > 0 ? 1 : 0.95,
     config: config.wobbly,
@@ -67,7 +65,7 @@ const Counter = () => {
               flexDirection: 'row',
               justifyContent: 'center',
               alignItems: 'center',
-              gap: '20px', // Adjust gap as needed
+              gap: '20px',
               mt: 2
             }}
           >
