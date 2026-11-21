@@ -9,6 +9,7 @@ A React web app built for the Upliance associate software developer assignment, 
 ![React Router](https://img.shields.io/badge/React%20Router-7-CA4245?logo=reactrouter&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-11-FFCA28?logo=firebase&logoColor=black)
 ![Yarn](https://img.shields.io/badge/Yarn-2C8EBB?logo=yarn&logoColor=white)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **Live demo:** https://upliance-git-main-sharky412s-projects.vercel.app/
 
@@ -126,3 +127,7 @@ Upliance/
 ├── package.json
 └── README.md
 ```
+
+## License
+
+Released under the [MIT License](LICENSE).
