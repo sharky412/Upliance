@@ -4,6 +4,7 @@ A React web app built for the Upliance associate software developer assignment, 
 
 [![Live demo](https://img.shields.io/badge/demo-live-brightgreen?logo=vercel)](https://upliance-git-main-sharky412s-projects.vercel.app/)
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-7-646CFF?logo=vite&logoColor=white)
 ![Material UI](https://img.shields.io/badge/Material%20UI-6-007FFF?logo=mui&logoColor=white)
 ![Redux Toolkit](https://img.shields.io/badge/Redux%20Toolkit-2-764ABC?logo=redux&logoColor=white)
 ![React Router](https://img.shields.io/badge/React%20Router-7-CA4245?logo=reactrouter&logoColor=white)
@@ -17,6 +18,7 @@ A React web app built for the Upliance associate software developer assignment, 
 
 This project is a React-based web application that includes a counter, a user data form and a rich text editor. It uses the following technologies:
 
+- **Build tool:** Vite
 - **UI library:** Material UI
 - **Animations:** React Spring
 - **State management:** Redux Toolkit (RTK)
@@ -61,6 +63,7 @@ The original assignment wireframe is in [`Screenshot 2025-02-04 163537.png`](Scr
 
 | Feature           | Library / tool      |
 |-------------------|---------------------|
+| Build tool        | Vite                |
 | UI library        | Material UI         |
 | Animations        | React Spring        |
 | State management  | Redux Toolkit (RTK) |
@@ -73,7 +76,7 @@ The original assignment wireframe is in [`Screenshot 2025-02-04 163537.png`](Scr
 ## Getting started
 
 ### Prerequisites
-- Node.js
+- Node.js 20.19+ (or 22.12+)
 - **Yarn** as the package manager
 
 ### Steps
@@ -86,13 +89,14 @@ The original assignment wireframe is in [`Screenshot 2025-02-04 163537.png`](Scr
    ```sh
    yarn install
    ```
-3. Start the development server:
+3. Start the development server (http://localhost:3000):
    ```sh
    yarn start
    ```
-4. Create a production build:
+4. Create a production build (output in `build/`) and preview it locally:
    ```sh
    yarn build
+   yarn preview
    ```
 
 ## Project structure
@@ -104,27 +108,30 @@ Upliance/
 │   ├── auth/
 │   │   └── firebase.js
 │   ├── components/
-│   │   ├── Chart.js
-│   │   ├── Counter.js
-│   │   ├── Navbar.js
-│   │   ├── PrivateRoute.js
-│   │   ├── RichTextEditor.js
-│   │   └── UserForm.js
+│   │   ├── Chart.jsx
+│   │   ├── Counter.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── PrivateRoute.jsx
+│   │   ├── RichTextEditor.jsx
+│   │   └── UserForm.jsx
 │   ├── pages/
-│   │   ├── Home.js
-│   │   ├── Login.js
-│   │   ├── Profile.js
-│   │   └── Signup.js
+│   │   ├── Home.jsx
+│   │   ├── Login.jsx
+│   │   ├── Profile.jsx
+│   │   └── Signup.jsx
 │   ├── redux/
 │   │   ├── counterSlice.js
 │   │   ├── store.js
 │   │   └── userSlice.js
-│   ├── App.js
-│   ├── index.js
+│   ├── App.jsx
+│   ├── index.jsx
 │   ├── index.css
 │   └── theme.js
 ├── .gitignore
+├── index.html
 ├── package.json
+├── vercel.json
+├── vite.config.js
 └── README.md
 ```
 
